@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.main {
+    width: 100%;
+    background: linear-gradient(135deg, #4a2c77, #6a2c77); /* Black and violet shade */
+    color: white;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.navbar {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    position: absolute;
+    top: 0;
+}
+
+.navbar .logo {
+    width: 120px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 16px;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li a {
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    transition: color 0.4s ease;
+}
+
+ul li a:hover, .active {
+    color: #f4637b; /* Highlight color */
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin-top: 100px;
+}
+
+.intro {
+    max-width: 500px;
+}
+
+.info h1 {
+    font-size: 65px;
+    color: #fff;
+}
+
+.info h3 {
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 20px 0;
+}
+
+.info span {
+    color: #f4637b; /* Highlight color */
+}
+
+.info a {
+    text-decoration: none;
+    color: #fff;
+    background: #2a2a2a;
+    padding: 10px 18px;
+    border-radius: 10px;
+    display: inline-block;
+    transition: background 0.4s ease;
+}
+
+.info a:hover {
+    background: #f4637b; /* Highlight color */
+}
+
+.profile-image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    object-fit: cover;
+}
+
+.icons {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.icons a {
+    text-decoration: none;
+    color: white;
+}
+
+.icons ion-icon {
+    margin: 0 15px;
+    font-size: 40px;
+    transition: color 0.4s ease;
+}
+
+.icons ion-icon:hover {
+    color: #f4637b; /* Highlight color */
+}
